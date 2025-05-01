@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 #1 is bad 0 is good
-df = pd.read_csv('/Users/bbhavna/Desktop/german credit/dataset/german_credit_data.csv')
+df = pd.read_csv('german_credit_data.csv')
 df=df.drop("Unnamed: 0",axis=1)
 
 df['Saving accounts'] = df['Saving accounts'].fillna(df['Saving accounts'].mode()[0])  # Categorical example
